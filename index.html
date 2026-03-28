@@ -36,9 +36,11 @@ h1, h2 { font-family: 'Playfair Display', serif; }
 <body class="aurora-bg text-white">
 
 <!-- NAV -->
-<nav class="glass p-4 flex justify-between">
+<nav class="glass p-4 flex justify-between items-center">
     <h1 class="text-xl font-bold">Bloom & Balance</h1>
-    <button onclick="welcomeVoice()">✨ Hear Welcome</button>
+    <button onclick="welcomeVoice()" class="bg-white text-black px-4 py-2 rounded-full">
+        ✨ Hear Welcome
+    </button>
 </nav>
 
 <!-- HERO -->
@@ -47,14 +49,19 @@ h1, h2 { font-family: 'Playfair Display', serif; }
         <h1 class="text-5xl font-bold mb-6">
             Empowering your <span class="text-purple-300">inner strength.</span>
         </h1>
-        <p class="mb-6">
+        <p class="mb-6 text-gray-200">
             A modern sanctuary for maternal health.
         </p>
-        <button class="bg-white text-black px-6 py-3 rounded-full">Get Started</button>
+        <button class="bg-white text-black px-6 py-3 rounded-full">
+            Get Started
+        </button>
     </div>
 
-    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d"
-         class="rounded-3xl">
+    <img 
+        src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d"
+        class="rounded-3xl w-full h-auto"
+        alt="Mother and child"
+    >
 </header>
 
 <!-- SERVICES -->
@@ -62,27 +69,43 @@ h1, h2 { font-family: 'Playfair Display', serif; }
 
     <!-- CARD 1 -->
     <div class="glass p-5 rounded-2xl">
-        <img src="/images/omar-lopez-_H1ZmUzwp9w-unsplash.jpg" class="rounded-xl mb-4">
-        <h3 class="font-bold">Antenatal</h3>
-        <p>Pregnancy guidance</p>
+        <img 
+            src="images/omar-lopez-_H1ZmUzwp9w-unsplash.jpg" 
+            class="rounded-xl mb-4 w-full h-48 object-cover"
+            alt="Antenatal care"
+        >
+        <h3 class="font-bold text-lg">Antenatal</h3>
+        <p class="text-gray-300">Pregnancy guidance</p>
     </div>
 
     <!-- CARD 2 -->
     <div class="glass p-5 rounded-2xl">
-        <img src="/images/neal-e-johnson-iLNKpdI0Pzg-unsplash.jpg" class="rounded-xl mb-4">
-        <h3 class="font-bold">Perinatal</h3>
-        <p>Recovery care</p>
+        <img 
+            src="images/neal-e-johnson-iLNKpdI0Pzg-unsplash.jpg" 
+            class="rounded-xl mb-4 w-full h-48 object-cover"
+            alt="Perinatal care"
+        >
+        <h3 class="font-bold text-lg">Perinatal</h3>
+        <p class="text-gray-300">Recovery care</p>
     </div>
 
     <!-- CARD 3 -->
     <div class="glass p-5 rounded-2xl">
-        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773"
-             class="rounded-xl mb-4">
-        <h3 class="font-bold">Lifestyle</h3>
-        <p>Stress & balance</p>
+        <img 
+            src="https://images.unsplash.com/photo-1506126613408-eca07ce68773"
+            class="rounded-xl mb-4 w-full h-48 object-cover"
+            alt="Lifestyle wellness"
+        >
+        <h3 class="font-bold text-lg">Lifestyle</h3>
+        <p class="text-gray-300">Stress & balance</p>
     </div>
 
 </section>
+
+<!-- FOOTER -->
+<footer class="text-center p-6 text-gray-400">
+    © 2026 Bloom & Balance. All rights reserved.
+</footer>
 
 <script>
 function welcomeVoice() {
